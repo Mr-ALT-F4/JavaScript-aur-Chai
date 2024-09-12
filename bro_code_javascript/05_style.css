@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    padding-top: 17%;
+}
+#myh1 {
+    color: rgb(22, 145, 94);
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#myrst,
+#mydec,
+#myinc {
+    border: 1.5px solid black;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    background-color: rgb(91, 129, 226);
+    padding: 3px;
+}
+#myrst:hover {
+    border-color: blue;
+    background-color: lightblue;
+    color: white;
+}
+#mydec:hover {
+    border-color: red;
+    background-color: pink;
+    color: white;
+}
+#myinc:hover {
+    border-color: green;
+    background-color: lightgreen;
+    color: white;
+}
+
+/* 
+#mylabel {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    font-family: Helvetica;
+}
+#btndiv{
+    text-align: center;
+}
+.btns{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: darkcyan;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.btns:hover{
+    background-color: aquamarine;
+}
+*/
