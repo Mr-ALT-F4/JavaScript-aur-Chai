@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript .checked property</title>
+    <link rel="stylesheet" href="07_style.css">
+    <!--     
+    <style>
+        /* Style the container to align items */
+        #mydiv1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adds space between the radio button items */
+            max-width: 200px; /* Optional: restrict the width */
+            margin: 20px; /* Adds space around the container */
+            padding: 10px; /* Adds padding inside the container */
+            border: 1px solid #ccc; /* Adds a light border */
+            border-radius: 5px; /* Rounds the corners */
+        }
+
+        /* Style the labels */
+        label {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Style the radio buttons */
+        input[type="radio"] {
+            margin-right: 10px; /* Space between the radio button and label */
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Choose Starter Pokemon</h1>
+    <!-- Radio buttons ko same naam dene se we are only able to select one choice. -->
+    <!-- Because radio buttons can be selected single only if they are in same group. -->
+    <div id = "mydiv1">
+        <input type="radio" id="charizard" name="samenaam">
+        <label for="charizard">Charizard</label>
+        <br>
+        <input type="radio" id="squirtle" name="samenaam">
+        <label for="squirtle">Squirtle</label>
+        <br>
+        <input type="radio" id="bulbasaur" name="samenaam">
+        <label for="bulbasaur">Bulbasaur</label>
+        <br>
+        <input type="radio" id="pikachu" name="samenaam">
+        <label for="pikachu">Pikachu</label>
+        <br><br>
+        <button id="mybtn">Choose</button>
+        <p id="mypara"></p>
+    </div>
+    <script src="07_checked.js"></script>
+</body>
+
+
+
+<!-- <body>
+    <h1>Choose Starter Pokemon</h1>
+    <div id="mydiv1">
+        <label>
+            <input type="radio" id="charizard" name="samenaam"> Charizard
+        </label>
+        <label>
+            <input type="radio" id="squirtle" name="samenaam"> Squirtle
+        </label>
+        <label>
+            <input type="radio" id="bulbasaur" name="samenaam"> Bulbasaur
+        </label>
+        <label>
+            <input type="radio" id="pikachu" name="samenaam"> Pikachu
+        </label>
+    </div>
+    <script src="07_checked.js"></script>
+</body> -->
+
+
+
+<!-- <body>
+    <h1>Choose Starter Pokemon</h1>
+    <div id="mydiv1">
+        <div class="radio-option">
+            <input type="radio" id="charizard" name="samenaam">
+            <label for="charizard">Charizard</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" id="squirtle" name="samenaam">
+            <label for="squirtle">Squirtle</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" id="bulbasaur" name="samenaam">
+            <label for="bulbasaur">Bulbasaur</label>
+        </div>
+        <div class="radio-option">
+            <input type="radio" id="pikachu" name="samenaam">
+            <label for="pikachu">Pikachu</label>
+        </div>
+    </div>
+    <style>
+        /* Container for each radio button and label pair */
+        .radio-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        /* Add some space between the radio button and the label */
+        .radio-option input {
+            margin-right: 10px;
+        }
+    </style>
+</body> -->
+</html>

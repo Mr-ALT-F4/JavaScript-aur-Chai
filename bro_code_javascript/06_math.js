@@ -29,8 +29,6 @@
 // let z = Math.log2(x);
 // let z = Math.hypot(u, v, w);
 
-
-
 // let diceroll = Math.floor(Math.random() * 6);
 // if (diceroll == 0) {
 //     console.log(1);
@@ -41,8 +39,6 @@
 // Math.random() gives a number b/w 0 and 1 (0, 1 exclusive). We need to do + 1 to get all till 6.
 // let diceroll = Math.floor(Math.random() * 6) + 1;
 // console.log(diceroll);
-
-
 
 let x = 50;
 let y = 100;
@@ -55,8 +51,23 @@ let y = 100;
 //     console.log(z);
 // }
 // More efficient method :-
-let z = Math.floor(Math.random() * (y - x)) + x;
-let p = document.getElementById("inpt");
-document.getElementById("rnd").onclick = function (){
-    p.textContent = z;
-}
+// document.getElementById("rnd").onclick = function () {
+//     let x = 1;
+//     let y = 100;
+//     let z = Math.floor(Math.random() * (y - x + 1)) + x;
+//     let p = document.getElementById("inpt");
+//     p.value = z;
+// };
+let p1 = document.getElementById("inpt1");
+let p2 = document.getElementById("inpt2");
+let p3 = document.getElementById("inpt3");
+document.getElementById("rnd").onclick = function () {
+    let x = 1;
+    let y = 100;
+    let z = Math.floor(Math.random() * (y - x)) + x;
+    p1.value = z;
+    z = Math.floor(Math.random() * (y - x)) + x;
+    p2.value = z;
+    z = Math.floor(Math.random() * (y - x)) + x;
+    p3.value = z;
+};
