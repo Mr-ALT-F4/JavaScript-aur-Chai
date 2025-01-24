@@ -21,3 +21,6 @@ btn.onclick = function () {
         outp.textContent = "Don't you want to start your journey ?"
     }
 }
+
+// Ternary Operator : condition ? if_part : else_part ;
+// Helps to shorten the if{} and else{} thing.
